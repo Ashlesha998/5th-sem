@@ -1,0 +1,72 @@
+<!--24. Design a webpage using <div> tag using class and id attribute.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ashlesha</title>
+    <style>
+        #header {
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #footer {
+            background-color: seagreen;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .nav {
+            background-color: pink;
+            padding: 5px;
+        }
+
+        .nav a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .main {
+            background-color: wheat;
+            padding: 15px;
+        }
+
+        .content {
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h2>My Webpage</h2>
+    </div>
+
+    <div class="nav">
+        <a href="/Home/">Home</a>
+        <a href="/About/">About</a>
+        <a href="/Contact/">Contact</a>
+    </div>
+
+    <div class="main">
+        <div class="content">
+            <h3>Welcome</h3>
+            <p>
+                This webpage is designed using the div tag with both
+                class and id attributes. The header and footer use id,
+                while navigation and content use class attributes.
+            </p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Designed by Ashlesha</p>
+    </div>
+
+</body>
+</html>
