@@ -1,0 +1,109 @@
+<!--27. Design a website using <div> tag, <table> tag and using internal css.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ashlesha</title>
+    <style>
+        body
+        {
+            background-color:rgb(250, 226, 221);
+        }
+        header
+        {
+            background-color:gray;
+            color: white;
+            border: 2px solid black;
+            text-align: center;
+            font-size: xx-large;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            padding: 10px;
+        }
+        table
+        {
+            border: black solid;
+            margin-top: 10px;  
+            margin-bottom: 10px;
+            font-family:Arial, Helvetica, sans-serif;
+            width: 100%;
+        }
+        th
+        {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        div
+        {
+            background-color: lightgray;
+            border: 3px solid gray;
+            margin-bottom: 10px;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <header>My Curriculum Vitae</header>
+
+    <table border="3">
+        <tr>
+            <th colspan="2">Personal Information</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>John Doe</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>john.doe@example.com</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>123-456-7890</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>123 Main Street, City, Country</td>
+        </tr>        
+    </table>
+
+    <div>
+        <h2>Education</h2>
+        <p>Bachelor of Science in Computer Science<br>
+            University of XYZ, Year</p>
+    </div>
+
+    <div>
+        <h2>Experience</h2>
+        <p>
+            Software Developer<br>
+            ABC Company, Year-Present<br>
+            Responsibilities:
+            <ul>
+                <li>Developing and maintaining web applications</li>
+                <li>Collaborating with cross-functional teams</li>
+                <li>Testing and debugging code</li>
+            </ul>
+        </p>
+    </div>
+
+    <div>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Database Management</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>References</h2>
+        <p>Available upon request</p>
+    </div>
+</body>
+</html>
