@@ -1,0 +1,35 @@
+<!--26.	Give an example using CSS Box-sizing property and see the difference between content box(default) and border box-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ashlesha</title>
+    <style>
+        .content
+        {
+            border: 1px solid black;
+            box-sizing: content-box;
+            padding: 10px;
+            width: 250px;
+            background-color: pink;
+        }
+        .border
+        {
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 250px;
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <p class="border">
+        The box-sizing property allows us to include the padding and border in an element's total width and height.
+        In this I have used border box.
+    </p>
+    <p class="content">
+        In this I have used content box(default).
+        In this width=padding+border+250px
+    </p>
+</body>
+</html>

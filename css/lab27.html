@@ -1,0 +1,67 @@
+<!--27.	Give an example using CSS Position property with static, fixed, sticky, relative and absolute value.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ashlesha</title>
+    <style>
+        body
+        {
+            height: 900px;
+            background-color:aquamarine;
+        }
+
+        div
+        {
+            margin: 10px;
+            padding: 10px;
+        }
+        div.static
+        {
+            position: static;
+            border: 3px solid pink;
+        }
+
+        div.relative
+        {
+            position: relative;
+            left: 15px;
+            border: 3px dotted yellow;
+        }
+
+        div.fixed
+        {
+            position: fixed;
+            border: 3px dashed red;
+            top: 200px;
+            right: 50px;
+        }
+
+        div.absolute
+        {
+            position: absolute;
+            border: 3px double green;
+            top: 50px;
+            left: 15px;
+        }
+
+        div.sticky
+        {
+            position: sticky;
+            border: 3px groove blue;
+            top: 0px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">CSS position: Static </div>
+    <div class="relative">CSS position: Relative </div>
+    <div class="fixed">
+        CSS position: Fixed
+        <div class="absolute">CSS position: Absolute </div> 
+    </div>
+    
+    <div class="sticky">CSS position: Sticky </div>
+</body>
+</html>

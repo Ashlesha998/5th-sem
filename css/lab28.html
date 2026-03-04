@@ -1,0 +1,52 @@
+<!--28.	Make 3 boxes and add position with z-index property and overlap the element.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ashlesha</title>
+    <style>
+        .div
+        {
+            position: relative;
+            height: 300px;
+        }
+        .square
+        {
+            background-color: lightblue;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 20px;
+            font-weight: bold;
+            font-size: large;
+            position: absolute;
+        }
+
+        #box1
+        {
+            z-index: 1;
+            top: 10px;
+            left: 10px;
+        }
+        #box2
+        {
+            z-index: 2;
+
+            top: 50px;
+            left: 50px;
+        }
+
+        #box3
+        {
+            z-index: 3;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square" id="box1"> Box 1</div>
+        <div class="square" id="box2"> Box 2</div>
+        <div class="square" id="box3"> Box 3</div>
+    </div>
+</body>
+</html>

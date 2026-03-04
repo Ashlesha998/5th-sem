@@ -1,0 +1,61 @@
+<!--6.	Design a webpage using attribute selector. Give proper example using:
+a.	CSS [attribute] Selector
+b.	CSS [attribute="value"] Selector
+c.	CSS [attribute~="value"] Selector
+d.	CSS [attribute|="value"] Selector
+e.	CSS [attribute^="value"] Selector
+f.	CSS [attribute$="value"] Selector3
+g.	CSS [attribute*="value"] Selector
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ashlesha</title>
+    <style>
+
+        a[target]
+        {
+            text-decoration: none;
+            font-size: large;
+        }
+
+        a[target="_parent"]
+        {
+            color: green;
+        }
+
+        [title~="Waterfall"]
+        {
+            border-radius: 25px;
+        }
+        [class|=head]
+        {
+            background-color: red;
+        }
+
+        [class^="title"]
+        {
+            font-style: italic;
+        }
+
+        [class$="title"]
+        {
+            color: darkblue;
+            text-shadow: 2px 2px RED;
+        }
+
+        [class*="e"]
+        {
+            color:gray
+        }
+    </style>
+</head>
+<body>
+    <h1 class="head">Attribute Selector</h1>
+    <a href="http://127.0.0.1:3002/d:/Ashlesha/5thsem/webtech/web/lab/html/lab21.html?serverWindowId=faf781c6-0a74-4578-b4c4-13a0bd1806d3" target="_blank">Sofia The First</a><br>
+    <a href="http://127.0.0.1:3002/d:/Ashlesha/5thsem/webtech/web/lab/html/lab23.html?serverWindowId=faf781c6-0a74-4578-b4c4-13a0bd1806d3" target="_parent">Miraculous</a><br>
+    <img src="pic01.jpg" title="Waterfall" width="200px" height="200px">
+    <figcaption class="title">Waterfall</figcaption>
+    <p class="cite">Source: Google</p>
+</body>
+</html>

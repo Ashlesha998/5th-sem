@@ -1,0 +1,25 @@
+h1
+{
+    color:chartreuse;
+    text-align: center;
+}
+
+p
+{
+    font-style: italic;
+}
+
+mark
+{
+    padding: 2px;
+}
+
+em
+{
+    font-size: large;
+}
+
+strong
+{
+    color: red;
+}

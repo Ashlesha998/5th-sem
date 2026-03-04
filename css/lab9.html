@@ -1,0 +1,59 @@
+<!--9.	Design a webpage using combinator selector. Give proper example using:
+a.	Descendant selector
+b.	Child selector
+c.	Adjacent sibling selector
+d.	General sibling selector 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ashlesha</title>
+    <style>
+        div
+        {
+            font-size: large;
+        }
+
+        section>p
+        {
+            font-style: italic;
+        }
+
+        aside + p
+        {
+            text-decoration: underline;
+        }
+
+        h3 ~ p
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h3>Decendant Selector</h3>
+    <div>
+        <p>The descendant combinator (space) matches all elements that are descendants (children, grandchildren, etc.) of a specified element.</p>
+    </div>
+        <p>This doen't belong in the descendant.</p>
+    <hr>
+    <h3>Child Combinator</h3>
+    <section>
+        <p>The > combinator selects all elements that are direct children of a specified element.</p>
+        <article>
+           <p>Css doesn't affect this part as it is not direct children of section.</p>
+        </article>
+    </section>
+    <hr>
+    <h3>Adjacent Sibling Selector</h3>
+    <aside>
+        <p>This is not affected as it is inside aside and has no other element infront of it.</p>
+    </aside>
+
+    <p>The + combinator is used to select an element that is directly after a specific element.</p>
+    <hr>
+    <h3>General Sibling Selector</h3>
+    <p>The ~ combinator selects all elements that are next siblings of a specified element.</p>
+</body>
+</html>
